@@ -1,0 +1,5 @@
+/.idea/
+/.pytest_cache/
+/static/
+/logs/
+/tests/.pytest_cache/
