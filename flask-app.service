@@ -1,10 +1,10 @@
 [Unit]
-Description=Flask app service
+Description=Flask-app-service
 After=network.target
 
 [Service]
 WorkingDirectory=/home/porublevnik/Porublev_Course_3
-ExecStart=/home/porublevnik/Porublev_Course_3/venv/bin/ python run.py
+ExecStart=/home/porublevnik/Porublev_Course_3/python run.py
 
 [Install]
 WantedBy=multi-user.target
