@@ -107,3 +107,11 @@ def delete_bookmark(post_pk):
         with open('static/data/bookmarks.json', 'w', encoding='utf-8') as file:
             json.dump(data, file)
     return
+
+def add_post(post_data):
+    """Добавляет номер поста в закладки"""
+    data = get_posts_all()
+    data.append(post_data)
+    with open('static/data/posts.json', 'w', encoding='utf-8') as file:
+        json.dump(data, file)
+    return

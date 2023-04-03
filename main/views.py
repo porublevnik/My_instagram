@@ -78,3 +78,9 @@ def page_bookmarks():
     posts = cut_posts(posts)
     bookmarks = get_bookmarks()
     return render_template('bookmarks.html', posts=posts, bookmarks=bookmarks)
+
+@main.route('/post', methods=['POST'])
+def new_post():
+    post_data = request.json
+    add_post(post_data)
+    return redirect("/", code=302)
