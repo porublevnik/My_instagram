@@ -5,7 +5,6 @@ After=network.target
 [Service]
 WorkingDirectory=/home/porublevnik/Porublev_Course_3
 ExecStart=/home/porublevnik/Porublev_Course_3/venv/bin/python3 -m flask run -h 0.0.0.0 -p 80
-Restart=always
 
 [Install]
 WantedBy=multi-user.target
